@@ -169,7 +169,8 @@ public class QuiltView : UICollectionViewLayout {
   override public func invalidateLayout() {
     super.invalidateLayout()
     
-    self.furthestBlockPoint       = CGPoint.zero
+    // Reset underlying model of furthestBlockPoint
+    self.blockPoint       = CGPoint.zero
     self.firstpublicSpace         = CGPoint.zero
     self.previousLayoutRect       = CGRect.zero
     self.previousLayoutAttributes = nil
